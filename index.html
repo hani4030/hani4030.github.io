@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <meta name="google-site-verification" content="OfsiftBWZjUWLawtB0DBhYcuHbekih27mxO3KzffNMY">
 
-<meta name="description" content="خدمات هوش مصنوعی هانی، طراحی سایت، تولید محتوا، تبلیغات، ایده پردازی و خدمات دیجیتال">
+<meta name="description" content="خدمات هوش مصنوعی هانی؛ طراحی سایت، تولید محتوا، تبلیغات، ایده کسب‌وکار و خدمات دیجیتال. سفارش مستقیم و ارتباط سریع.">
 
-<title>خدمات هوش مصنوعی هانی</title>
+<meta name="keywords" content="هوش مصنوعی، طراحی سایت، تولید محتوا، تبلیغات، خدمات دیجیتال، سایت فروشگاهی">
+
+<meta name="author" content="خدمات هوش مصنوعی هانی">
+
+<meta name="theme-color" content="#2563eb">
+
+<title>خدمات هوش مصنوعی هانی | طراحی سایت و خدمات دیجیتال</title>
 
 <style>
 
@@ -16,6 +23,10 @@
 box-sizing:border-box;
 margin:0;
 padding:0;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
@@ -29,21 +40,21 @@ header{
 background:linear-gradient(135deg,#111827,#2563eb);
 color:white;
 text-align:center;
-padding:70px 20px;
+padding:75px 20px;
 }
 
-header .logo{
-font-size:55px;
+.logo{
+font-size:58px;
 }
 
 header h1{
-font-size:36px;
+font-size:38px;
 margin:10px 0;
 }
 
 header p{
 font-size:18px;
-max-width:700px;
+max-width:750px;
 margin:auto;
 }
 
@@ -54,6 +65,11 @@ border-radius:12px;
 text-decoration:none;
 margin:8px 5px;
 font-weight:bold;
+transition:.2s;
+}
+
+.btn:hover{
+transform:translateY(-2px);
 }
 
 .btn-main{
@@ -66,10 +82,19 @@ background:#25D366;
 color:white;
 }
 
+.btn-call{
+background:#f59e0b;
+color:white;
+}
+
 .container{
 max-width:1100px;
 margin:auto;
 padding:45px 20px;
+}
+
+section{
+scroll-margin-top:20px;
 }
 
 .title{
@@ -118,12 +143,104 @@ color:#555;
 font-size:15px;
 }
 
-.why-hani{
-margin-top:50px;
+.why{
+margin-top:55px;
+}
+
+.highlight{
+margin-top:55px;
+background:linear-gradient(135deg,#111827,#1d4ed8);
+color:white;
+padding:40px 25px;
+border-radius:22px;
+text-align:center;
+}
+
+.highlight h2{
+font-size:30px;
+margin-bottom:10px;
+}
+
+.highlight p{
+max-width:750px;
+margin:auto;
+}
+
+.packages{
+margin-top:55px;
+}
+
+.price-card{
+background:white;
+padding:30px 22px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+border:2px solid transparent;
+}
+
+.price-card.featured{
+border-color:#2563eb;
+}
+
+.price-card h3{
+font-size:23px;
+color:#2563eb;
+}
+
+.price{
+font-size:25px;
+font-weight:bold;
+margin:15px 0;
+color:#111827;
+}
+
+.price-card ul{
+list-style:none;
+margin:15px 0;
+}
+
+.price-card li{
+margin:7px 0;
+color:#555;
+}
+
+.portfolio{
+margin-top:55px;
+}
+
+.portfolio-card{
+background:white;
+padding:25px;
+border-radius:18px;
+box-shadow:0 5px 20px rgba(0,0,0,.07);
+}
+
+.portfolio-card h3{
+color:#2563eb;
+margin-bottom:8px;
+}
+
+.steps{
+margin-top:55px;
+}
+
+.step-number{
+width:55px;
+height:55px;
+margin:0 auto 10px;
+border-radius:50%;
+background:#2563eb;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:23px;
+font-weight:bold;
 }
 
 .assistant{
-margin-top:50px;
+margin-top:55px;
 background:white;
 padding:35px 25px;
 border-radius:20px;
@@ -140,15 +257,35 @@ color:#666;
 margin:8px 0 20px;
 }
 
-textarea{
+.quick{
+margin-top:25px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+}
+
+.quick button{
+background:#e8eefc;
+color:#1d4ed8;
+margin:0;
+padding:10px 16px;
+}
+
+textarea,
+input,
+select{
 width:100%;
-max-width:800px;
-min-height:120px;
-padding:15px;
+padding:14px;
 border:1px solid #ddd;
-border-radius:13px;
+border-radius:12px;
 font-family:inherit;
-font-size:16px;
+font-size:15px;
+outline:none;
+}
+
+textarea{
+min-height:120px;
 resize:vertical;
 }
 
@@ -174,23 +311,44 @@ border-radius:13px;
 text-align:right;
 }
 
-.quick{
-margin-top:30px;
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:10px;
+.order-form{
+margin-top:55px;
+background:white;
+padding:35px 25px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
-.quick button{
-background:#e8eefc;
-color:#1d4ed8;
-margin:0;
-padding:10px 16px;
+.form-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
 }
 
-.order{
-margin-top:50px;
+.form-full{
+grid-column:1/-1;
+}
+
+.faq{
+margin-top:55px;
+}
+
+.faq-item{
+background:white;
+margin-bottom:12px;
+padding:18px 20px;
+border-radius:14px;
+box-shadow:0 3px 15px rgba(0,0,0,.05);
+}
+
+.faq-item summary{
+cursor:pointer;
+font-weight:bold;
+color:#2563eb;
+}
+
+.final-order{
+margin-top:55px;
 background:linear-gradient(135deg,#111827,#1d4ed8);
 color:white;
 padding:45px 20px;
@@ -198,21 +356,29 @@ border-radius:22px;
 text-align:center;
 }
 
-.order h2{
-font-size:29px;
+.final-order h2{
+font-size:30px;
 margin-bottom:10px;
 }
 
-.order p{
-margin-bottom:20px;
+.final-order p{
+margin-bottom:18px;
+}
+
+.contact-box{
+margin-top:35px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
 }
 
 footer{
 background:#111827;
 color:#ddd;
 text-align:center;
-padding:28px 15px;
-margin-top:50px;
+padding:30px 15px;
+margin-top:55px;
 }
 
 .whatsapp-float{
@@ -233,7 +399,28 @@ box-shadow:0 5px 18px rgba(0,0,0,.2);
 z-index:999;
 }
 
-@media(max-width:600px){
+.top-button{
+position:fixed;
+right:20px;
+bottom:20px;
+width:45px;
+height:45px;
+background:#2563eb;
+color:white;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+text-decoration:none;
+font-size:20px;
+z-index:999;
+}
+
+@media(max-width:700px){
+
+header{
+padding:55px 15px;
+}
 
 header h1{
 font-size:28px;
@@ -247,12 +434,23 @@ font-size:16px;
 padding:35px 15px;
 }
 
+.form-grid{
+grid-template-columns:1fr;
 }
+
+.form-full{
+grid-column:auto;
+}
+
+}
+
 </style>
 
 </head>
 
 <body>
+
+<!-- HEADER -->
 
 <header>
 
@@ -262,11 +460,13 @@ padding:35px 15px;
 
 <p>
 راهکارهای هوشمند برای طراحی سایت، تولید محتوا،
-تبلیغات، ایده پردازی و خدمات دیجیتال
+تبلیغات، ایده‌پردازی و خدمات دیجیتال
 </p>
 
-<a class="btn btn-main" href="#assistant">
-🤖 شروع گفتگو
+<div>
+
+<a class="btn btn-main" href="#services">
+🛠️ مشاهده خدمات
 </a>
 
 <a class="btn btn-whatsapp"
@@ -275,18 +475,20 @@ target="_blank">
 📱 ثبت سفارش
 </a>
 
+</div>
+
 </header>
 
 <main class="container">
 
-<!-- خدمات -->
+<!-- SERVICES -->
 
-<section>
+<section id="services">
 
-<h2 class="title">خدمات ما</h2>
+<h2 class="title">🛠️ خدمات ما</h2>
 
 <p class="subtitle">
-کمک به شما برای انجام سریع‌تر کارهای دیجیتال
+کمک به شما برای انجام سریع‌تر و بهتر کارهای دیجیتال
 </p>
 
 <div class="services">
@@ -303,7 +505,7 @@ target="_blank">
 <div class="icon">✍️</div>
 <h3>تولید محتوا</h3>
 <p>
-مقاله، تبلیغات، معرفی محصول و متن‌های کاربردی.
+مقاله، متن تبلیغاتی، معرفی محصول و محتوای کاربردی.
 </p>
 </div>
 
@@ -311,7 +513,7 @@ target="_blank">
 <div class="icon">📱</div>
 <h3>محتوای شبکه اجتماعی</h3>
 <p>
-ایده و متن برای فعالیت بهتر در شبکه‌های اجتماعی.
+ایده، کپشن و متن مناسب برای فعالیت در شبکه‌های اجتماعی.
 </p>
 </div>
 
@@ -319,7 +521,7 @@ target="_blank">
 <div class="icon">💡</div>
 <h3>ایده کسب‌وکار</h3>
 <p>
-پیشنهاد ایده برای شروع یا توسعه کسب‌وکار.
+ایده برای شروع، توسعه و بهتر کردن کسب‌وکار.
 </p>
 </div>
 
@@ -327,7 +529,7 @@ target="_blank">
 <div class="icon">📚</div>
 <h3>کتاب و فایل</h3>
 <p>
-آماده‌سازی کتاب، فایل و محتوای آموزشی.
+آماده‌سازی کتاب، فایل آموزشی و محتوای دیجیتال.
 </p>
 </div>
 
@@ -335,7 +537,23 @@ target="_blank">
 <div class="icon">🤖</div>
 <h3>خدمات هوش مصنوعی</h3>
 <p>
-کمک برای استفاده کاربردی از ابزارهای هوش مصنوعی.
+استفاده کاربردی از ابزارهای هوش مصنوعی برای کار و کسب‌وکار.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">📢</div>
+<h3>تبلیغات</h3>
+<p>
+نوشتن متن تبلیغاتی و ایده برای معرفی بهتر محصولات و خدمات.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🧠</div>
+<h3>مشاوره دیجیتال</h3>
+<p>
+کمک برای انتخاب مسیر مناسب در پروژه‌های دیجیتال.
 </p>
 </div>
 
@@ -343,14 +561,14 @@ target="_blank">
 
 </section>
 
-<!-- چرا هانی -->
+<!-- WHY HANI -->
 
-<section class="why-hani">
+<section class="why">
 
 <h2 class="title">⭐ چرا هانی؟</h2>
 
 <p class="subtitle">
-چند دلیل برای انتخاب خدمات هانی
+ساده، سریع و مستقیم برای انجام کارهای دیجیتال
 </p>
 
 <div class="services">
@@ -359,23 +577,23 @@ target="_blank">
 <div class="icon">⚡</div>
 <h3>پاسخ‌گویی سریع</h3>
 <p>
-درخواست شما سریع بررسی می‌شود و راهکار مناسب پیشنهاد می‌کنیم.
+درخواست شما بررسی می‌شود و راهکار مناسب پیشنهاد می‌کنیم.
 </p>
 </div>
 
 <div class="card">
 <div class="icon">💰</div>
-<h3>قیمت مناسب</h3>
+<h3>هزینه مناسب</h3>
 <p>
-تلاش می‌کنیم خدمات کاربردی را با هزینه مناسب ارائه کنیم.
+هدف ما ارائه خدمات کاربردی با هزینه قابل دسترس است.
 </p>
 </div>
 
 <div class="card">
 <div class="icon">🤖</div>
-<h3>استفاده از هوش مصنوعی</h3>
+<h3>هوش مصنوعی</h3>
 <p>
-برای انجام سریع‌تر و بهتر بسیاری از کارهای دیجیتال از هوش مصنوعی استفاده می‌کنیم.
+برای سرعت و کیفیت بیشتر از ابزارهای هوش مصنوعی استفاده می‌کنیم.
 </p>
 </div>
 
@@ -383,7 +601,7 @@ target="_blank">
 <div class="icon">📱</div>
 <h3>ارتباط مستقیم</h3>
 <p>
-برای سفارش و پیگیری کار، ارتباط مستقیم و ساده از طریق واتساپ دارید.
+برای سفارش و پیگیری، ارتباط مستقیم و ساده دارید.
 </p>
 </div>
 
@@ -391,14 +609,200 @@ target="_blank">
 
 </section>
 
-<!-- دستیار -->
+<!-- SPECIAL OFFER -->
+
+<section class="highlight">
+
+<h2>🎁 پیشنهاد ویژه برای شروع</h2>
+
+<p>
+اگر هنوز نمی‌دانید چه خدمتی برای شما مناسب است،
+درخواست خود را توضیح دهید تا مسیر مناسب را به شما پیشنهاد کنیم.
+</p>
+
+<a class="btn btn-whatsapp"
+href="https://wa.me/989160973940"
+target="_blank">
+💬 مشاوره و ثبت درخواست
+</a>
+
+</section>
+
+<!-- PACKAGES -->
+
+<section class="packages">
+
+<h2 class="title">💰 پکیج‌های خدمات</h2>
+
+<p class="subtitle">
+قیمت نهایی بعد از بررسی درخواست شما اعلام می‌شود.
+</p>
+
+<div class="services">
+
+<div class="price-card">
+
+<h3>🌱 شروع</h3>
+
+<div class="price">
+استعلام قیمت
+</div>
+
+<ul>
+<li>✓ بررسی نیاز</li>
+<li>✓ پیشنهاد راهکار</li>
+<li>✓ مناسب شروع کار</li>
+</ul>
+
+<a class="btn btn-whatsapp"
+href="https://wa.me/989160973940"
+target="_blank">
+استعلام قیمت
+</a>
+
+</div>
+
+<div class="price-card featured">
+
+<h3>🚀 حرفه‌ای</h3>
+
+<div class="price">
+استعلام قیمت
+</div>
+
+<ul>
+<li>✓ خدمات اختصاصی</li>
+<li>✓ استفاده از ابزارهای هوش مصنوعی</li>
+<li>✓ مناسب کسب‌وکارها</li>
+</ul>
+
+<a class="btn btn-whatsapp"
+href="https://wa.me/989160973940"
+target="_blank">
+درخواست مشاوره
+</a>
+
+</div>
+
+<div class="price-card">
+
+<h3>🏢 اختصاصی</h3>
+
+<div class="price">
+استعلام قیمت
+</div>
+
+<ul>
+<li>✓ بررسی کامل پروژه</li>
+<li>✓ راهکار اختصاصی</li>
+<li>✓ مناسب پروژه‌های بزرگ‌تر</li>
+</ul>
+
+<a class="btn btn-whatsapp"
+href="https://wa.me/989160973940"
+target="_blank">
+درخواست بررسی
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PORTFOLIO -->
+
+<section class="portfolio">
+
+<h2 class="title">💼 نمونه‌کارها</h2>
+
+<p class="subtitle">
+بخشی برای نمایش پروژه‌های انجام‌شده
+</p>
+
+<div class="services">
+
+<div class="portfolio-card">
+<h3>🌐 طراحی سایت</h3>
+<p>
+نمونه سایت‌های طراحی‌شده در این بخش قرار می‌گیرند.
+</p>
+</div>
+
+<div class="portfolio-card">
+<h3>✍️ تولید محتوا</h3>
+<p>
+نمونه متن‌ها و محتوای تبلیغاتی در این بخش قرار می‌گیرند.
+</p>
+</div>
+
+<div class="portfolio-card">
+<h3>🤖 پروژه‌های هوش مصنوعی</h3>
+<p>
+نمونه پروژه‌های مرتبط با هوش مصنوعی در این بخش نمایش داده می‌شوند.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- STEPS -->
+
+<section class="steps">
+
+<h2 class="title">📋 مراحل سفارش</h2>
+
+<p class="subtitle">
+فرآیند کار ساده و شفاف است
+</p>
+
+<div class="services">
+
+<div class="card">
+<div class="step-number">1</div>
+<h3>درخواست</h3>
+<p>
+نیاز خود را از طریق سایت یا واتساپ ارسال می‌کنید.
+</p>
+</div>
+
+<div class="card">
+<div class="step-number">2</div>
+<h3>بررسی</h3>
+<p>
+درخواست شما بررسی و راهکار مناسب پیشنهاد می‌شود.
+</p>
+</div>
+
+<div class="card">
+<div class="step-number">3</div>
+<h3>انجام</h3>
+<p>
+پس از توافق، کار شما انجام می‌شود.
+</p>
+</div>
+
+<div class="card">
+<div class="step-number">4</div>
+<h3>تحویل</h3>
+<p>
+نتیجه نهایی طبق توافق به شما تحویل داده می‌شود.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ASSISTANT -->
 
 <section class="assistant" id="assistant">
 
 <h2>🤖 دستیار هوشمند هانی</h2>
 
 <p>
-سؤال یا نیاز خود را بنویسید یا یکی از گزینه‌های زیر را انتخاب کنید.
+نیاز خود را بنویسید یا یکی از گزینه‌های زیر را انتخاب کنید.
 </p>
 
 <div class="quick">
@@ -419,14 +823,18 @@ target="_blank">
 📢 تبلیغ می‌خواهم
 </button>
 
+<button onclick="quickQuestion('خدمات هوش مصنوعی می خواهم')">
+🤖 هوش مصنوعی می‌خواهم
+</button>
+
 </div>
 
 <br>
 
 <textarea
 id="question"
-placeholder="مثلاً: برای فروشگاه من چه سایتی مناسب است؟"
-></textarea>
+placeholder="مثلاً: برای فروشگاه من چه سایتی مناسب است؟">
+</textarea>
 
 <br>
 
@@ -438,28 +846,141 @@ placeholder="مثلاً: برای فروشگاه من چه سایتی مناسب
 
 </section>
 
-<!-- ثبت سفارش -->
+<!-- ORDER FORM -->
 
-<section class="order">
+<section class="order-form" id="order">
 
-<h2>📱 آماده ثبت سفارش هستید؟</h2>
+<h2 class="title">📝 درخواست سفارش</h2>
 
-<p>
-برای دریافت خدمات یا توضیح درخواست خود، مستقیم در واتساپ پیام دهید.
+<p class="subtitle">
+اطلاعات درخواست خود را وارد کنید تا بتوانیم سریع‌تر راهنمایی کنیم.
 </p>
 
-<a
-class="btn btn-whatsapp"
+<div class="form-grid">
+
+<div>
+<label>نام شما</label>
+<input id="customerName" type="text" placeholder="نام">
+</div>
+
+<div>
+<label>خدمت موردنظر</label>
+
+<select id="serviceName">
+
+<option value="طراحی سایت">
+طراحی سایت
+</option>
+
+<option value="تولید محتوا">
+تولید محتوا
+</option>
+
+<option value="تبلیغات">
+تبلیغات
+</option>
+
+<option value="ایده کسب‌وکار">
+ایده کسب‌وکار
+</option>
+
+<option value="خدمات هوش مصنوعی">
+خدمات هوش مصنوعی
+</option>
+
+<option value="سایر خدمات">
+سایر خدمات
+</option>
+
+</select>
+
+</div>
+
+<div class="form-full">
+
+<label>توضیح درخواست</label>
+
+<textarea
+id="customerRequest"
+placeholder="مثلاً برای کسب‌وکارم یک سایت معرفی می‌خواهم...">
+</textarea>
+
+</div>
+
+</div>
+
+<button onclick="sendOrder()">
+📱 ارسال درخواست در واتساپ
+</button>
+
+</section>
+
+<!-- FAQ -->
+
+<section class="faq">
+
+<h2 class="title">❓ سوالات متداول</h2>
+
+<p class="subtitle">
+پاسخ چند سؤال رایج
+</p>
+
+<details class="faq-item">
+<summary>چطور سفارش بدهم؟</summary>
+<p>
+می‌توانید از فرم سفارش سایت استفاده کنید یا مستقیماً در واتساپ پیام دهید.
+</p>
+</details>
+
+<details class="faq-item">
+<summary>قیمت خدمات چقدر است؟</summary>
+<p>
+قیمت به نوع و حجم پروژه بستگی دارد و بعد از بررسی درخواست اعلام می‌شود.
+</p>
+</details>
+
+<details class="faq-item">
+<summary>آیا قبل از سفارش می‌توانم مشاوره بگیرم؟</summary>
+<p>
+بله. ابتدا درخواست خود را توضیح دهید تا درباره مسیر مناسب راهنمایی شوید.
+</p>
+</details>
+
+<details class="faq-item">
+<summary>آیا خدمات برای کسب‌وکارهای کوچک هم مناسب است؟</summary>
+<p>
+بله. خدمات بر اساس نیاز و اندازه پروژه قابل تنظیم است.
+</p>
+</details>
+
+</section>
+
+<!-- FINAL ORDER -->
+
+<section class="final-order">
+
+<h2>🚀 آماده شروع هستید؟</h2>
+
+<p>
+درخواست خود را بفرستید تا درباره بهترین راهکار صحبت کنیم.
+</p>
+
+<a class="btn btn-whatsapp"
 href="https://wa.me/989160973940"
 target="_blank">
 💬 پیام در واتساپ
+</a>
+
+<a class="btn btn-call"
+href="tel:+989160973940">
+☎️ تماس تلفنی
 </a>
 
 </section>
 
 </main>
 
-<!-- دکمه شناور واتساپ -->
+<!-- FLOATING BUTTONS -->
 
 <a
 class="whatsapp-float"
@@ -469,17 +990,36 @@ title="واتساپ">
 💬
 </a>
 
+<a
+class="top-button"
+href="#"
+title="بازگشت به بالا">
+↑
+</a>
+
+<!-- FOOTER -->
+
 <footer>
 
-© 2026 خدمات هوش مصنوعی هانی
+<strong>خدمات هوش مصنوعی هانی</strong>
 
 <br>
 
-طراحی و ارائه خدمات دیجیتال با کمک هوش مصنوعی
+طراحی سایت، تولید محتوا، تبلیغات و خدمات دیجیتال
+
+<br><br>
+
+📱 09160973940
+
+<br><br>
+
+© 2026 خدمات هوش مصنوعی هانی
 
 </footer>
 
 <script>
+
+/* دستیار هوشمند */
 
 function quickQuestion(text){
 
@@ -512,8 +1052,8 @@ const text=question.toLowerCase();
 
 let response =
 "🤖 درخواست شما دریافت شد.<br><br>"+
-"برای راهنمایی بیشتر می‌توانید درخواست خود را "+
-"در واتساپ ارسال کنید تا درباره خدمات مناسب صحبت کنیم.";
+"برای راهنمایی دقیق‌تر می‌توانید درخواست خود را در واتساپ ارسال کنید.";
+
 
 if(
 text.includes("سایت")||
@@ -523,9 +1063,8 @@ text.includes("طراحی")
 
 response =
 "🌐 <b>طراحی سایت</b><br><br>"+
-"اگر برای کسب‌وکارتان سایت می‌خواهید، "+
-"می‌توانیم یک سایت معرفی خدمات یا کسب‌وکار برایتان آماده کنیم.<br><br>"+
-"برای ثبت سفارش روی دکمه واتساپ بزنید.";
+"برای کسب‌وکار شما می‌توانیم سایت معرفی، خدماتی یا فروشگاهی آماده کنیم.<br><br>"+
+"برای بررسی پروژه، درخواست خود را در واتساپ ارسال کنید.";
 
 }
 
@@ -538,9 +1077,8 @@ text.includes("کپشن")
 
 response =
 "✍️ <b>تولید محتوا</b><br><br>"+
-"می‌توانیم برای شما مقاله، متن تبلیغاتی، "+
-"معرفی محصول و کپشن شبکه‌های اجتماعی آماده کنیم.<br><br>"+
-"برای ثبت سفارش در واتساپ پیام دهید.";
+"امکان آماده‌سازی مقاله، متن تبلیغاتی، معرفی محصول و کپشن وجود دارد.<br><br>"+
+"برای سفارش در واتساپ پیام دهید.";
 
 }
 
@@ -552,9 +1090,8 @@ text.includes("کار")
 
 response =
 "💡 <b>ایده کسب‌وکار</b><br><br>"+
-"می‌توانیم برای شروع یا توسعه کسب‌وکار، "+
-"ایده‌هایی برای خدمات، محتوا و تبلیغات پیشنهاد کنیم.<br><br>"+
-"برای بررسی درخواستتان در واتساپ پیام دهید.";
+"می‌توانیم برای شروع یا توسعه کسب‌وکار، ایده‌های کاربردی پیشنهاد کنیم.<br><br>"+
+"برای بررسی درخواست در واتساپ پیام دهید.";
 
 }
 
@@ -566,8 +1103,7 @@ text.includes("محصول")
 
 response =
 "📢 <b>تبلیغات و فروش</b><br><br>"+
-"می‌توانیم متن تبلیغاتی، معرفی محصول و ایده‌های "+
-"مناسب برای جذب مشتری آماده کنیم.<br><br>"+
+"می‌توانیم متن تبلیغاتی، معرفی محصول و ایده‌های جذب مشتری آماده کنیم.<br><br>"+
 "برای سفارش در واتساپ پیام دهید.";
 
 }
@@ -580,9 +1116,8 @@ text.includes("آموزش")
 
 response =
 "📚 <b>کتاب و فایل آموزشی</b><br><br>"+
-"برای آماده‌سازی کتاب، فایل آموزشی و محتوای دیجیتال "+
-"می‌توانیم کمک کنیم.<br><br>"+
-"برای ثبت سفارش در واتساپ پیام دهید.";
+"برای آماده‌سازی کتاب، فایل آموزشی و محتوای دیجیتال می‌توانیم کمک کنیم.<br><br>"+
+"برای سفارش در واتساپ پیام دهید.";
 
 }
 
@@ -594,8 +1129,7 @@ text.includes("ai")
 
 response =
 "🤖 <b>خدمات هوش مصنوعی</b><br><br>"+
-"می‌توانیم به شما کمک کنیم از ابزارهای هوش مصنوعی "+
-"برای کارهای دیجیتال و کسب‌وکار استفاده کنید.<br><br>"+
+"می‌توانیم برای استفاده کاربردی از ابزارهای هوش مصنوعی در کار و کسب‌وکار کمک کنیم.<br><br>"+
 "برای دریافت خدمات در واتساپ پیام دهید.";
 
 }
@@ -603,6 +1137,41 @@ response =
 answer.style.display="block";
 
 answer.innerHTML=response;
+
+}
+
+
+/* فرم سفارش */
+
+function sendOrder(){
+
+const name =
+document.getElementById("customerName").value.trim();
+
+const service =
+document.getElementById("serviceName").value;
+
+const request =
+document.getElementById("customerRequest").value.trim();
+
+if(!name || !request){
+
+alert("لطفاً نام و توضیح درخواست خود را وارد کنید.");
+
+return;
+
+}
+
+const message =
+"سلام هانی، برای سفارش خدمات پیام می‌دهم.%0A%0A"+
+"نام: "+encodeURIComponent(name)+"%0A"+
+"خدمت: "+encodeURIComponent(service)+"%0A"+
+"درخواست: "+encodeURIComponent(request);
+
+window.open(
+"https://wa.me/989160973940?text="+message,
+"_blank"
+);
 
 }
 
