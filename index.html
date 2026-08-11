@@ -331,7 +331,6 @@ target="_blank">
 </div>
 
 </div>
-
 </section>
 
 <section class="assistant" id="assistant">
@@ -424,20 +423,19 @@ askAssistant();
 
 }
 
-
 function askAssistant(){
 
-const question=
+const question =
 document.getElementById("question").value.trim();
 
-const answer=
+const answer =
 document.getElementById("answer");
 
 if(!question){
 
 answer.style.display="block";
 
-answer.innerHTML=
+answer.innerHTML =
 "لطفاً سؤال یا نیاز خود را بنویسید.";
 
 return;
@@ -446,11 +444,10 @@ return;
 
 const text=question.toLowerCase();
 
-let response=
+let response =
 "🤖 درخواست شما دریافت شد.<br><br>"+
 "برای راهنمایی بیشتر می‌توانید درخواست خود را "+
 "در واتساپ ارسال کنید تا درباره خدمات مناسب صحبت کنیم.";
-
 
 if(
 text.includes("سایت")||
@@ -458,14 +455,13 @@ text.includes("وب")||
 text.includes("طراحی")
 ){
 
-response=
+response =
 "🌐 <b>طراحی سایت</b><br><br>"+
 "اگر برای کسب‌وکارتان سایت می‌خواهید، "+
 "می‌توانیم یک سایت معرفی خدمات یا کسب‌وکار برایتان آماده کنیم.<br><br>"+
 "برای ثبت سفارش روی دکمه واتساپ بزنید.";
 
 }
-
 
 else if(
 text.includes("محتوا")||
@@ -474,7 +470,7 @@ text.includes("متن")||
 text.includes("کپشن")
 ){
 
-response=
+response =
 "✍️ <b>تولید محتوا</b><br><br>"+
 "می‌توانیم برای شما مقاله، متن تبلیغاتی، "+
 "معرفی محصول و کپشن شبکه‌های اجتماعی آماده کنیم.<br><br>"+
@@ -482,14 +478,13 @@ response=
 
 }
 
-
 else if(
 text.includes("ایده")||
 text.includes("کسب")||
 text.includes("کار")
 ){
 
-response=
+response =
 "💡 <b>ایده کسب‌وکار</b><br><br>"+
 "می‌توانیم برای شروع یا توسعه کسب‌وکار، "+
 "ایده‌هایی برای خدمات، محتوا و تبلیغات پیشنهاد کنیم.<br><br>"+
@@ -497,14 +492,13 @@ response=
 
 }
 
-
 else if(
 text.includes("تبلیغ")||
 text.includes("فروش")||
 text.includes("محصول")
 ){
 
-response=
+response =
 "📢 <b>تبلیغات و فروش</b><br><br>"+
 "می‌توانیم متن تبلیغاتی، معرفی محصول و ایده‌های "+
 "مناسب برای جذب مشتری آماده کنیم.<br><br>"+
@@ -512,14 +506,13 @@ response=
 
 }
 
-
 else if(
 text.includes("کتاب")||
 text.includes("فایل")||
 text.includes("آموزش")
 ){
 
-response=
+response =
 "📚 <b>کتاب و فایل آموزشی</b><br><br>"+
 "برای آماده‌سازی کتاب، فایل آموزشی و محتوای دیجیتال "+
 "می‌توانیم کمک کنیم.<br><br>"+
@@ -527,21 +520,19 @@ response=
 
 }
 
-
 else if(
 text.includes("هوش مصنوعی")||
 text.includes("ربات")||
 text.includes("ai")
 ){
 
-response=
+response =
 "🤖 <b>خدمات هوش مصنوعی</b><br><br>"+
 "می‌توانیم به شما کمک کنیم از ابزارهای هوش مصنوعی "+
 "برای کارهای دیجیتال و کسب‌وکار استفاده کنید.<br><br>"+
 "برای دریافت خدمات در واتساپ پیام دهید.";
 
 }
-
 
 answer.style.display="block";
 
