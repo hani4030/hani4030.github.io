@@ -1,115 +1,550 @@
-```html
 <!DOCTYPE html>
+
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hani AI</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body {
-    margin: 0;
-    font-family: Tahoma, Arial, sans-serif;
-    background: #f4f7fb;
-    color: #222;
-}
+  <meta name="google-site-verification" content="OfsiftBWZjUWLawtB0DBhYcuHbekih27mxO3KzffNMY">
 
-header {
-    background: #111827;
-    color: white;
-    text-align: center;
-    padding: 70px 20px;
-}
+  <meta name="description" content="خدمات هوش مصنوعی هانی، طراحی سایت، تولید محتوا، ایده‌پردازی و خدمات دیجیتال">
 
-header h1 {
-    font-size: 40px;
-    margin: 0 0 15px;
-}
+  <title>خدمات هوش مصنوعی هانی | Hani AI</title>
 
-header p {
-    font-size: 20px;
-}
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-.container {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 20px;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-.services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
+    body {
+      font-family: Tahoma, Arial, sans-serif;
+      background: #f4f7fb;
+      color: #1f2937;
+      line-height: 1.9;
+    }
 
-.card {
-    background: white;
-    padding: 30px 20px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-}
+    header {
+      background: linear-gradient(135deg, #111827, #1d4ed8, #2563eb);
+      color: white;
+      text-align: center;
+      padding: 75px 20px;
+    }
 
-.card h2 {
-    color: #2563eb;
-}
+    header .logo {
+      font-size: 58px;
+      margin-bottom: 10px;
+    }
 
-.card p {
-    line-height: 1.8;
-}
+    header h1 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
 
-footer {
-    background: #111827;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    margin-top: 50px;
-}
-</style>
-<meta name="google-site-verification" content="OfsiftBWZjUWLawtB0DBhYcuHbekih27mxO3KzffNMY" />    
+    header p {
+      font-size: 19px;
+      max-width: 700px;
+      margin: auto;
+      opacity: 0.95;
+    }
+
+    .hero-buttons {
+      margin-top: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 25px;
+      border-radius: 12px;
+      text-decoration: none;
+      margin: 6px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .btn-main {
+      background: white;
+      color: #1d4ed8;
+    }
+
+    .btn-whatsapp {
+      background: #25D366;
+      color: white;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 45px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .section-description {
+      text-align: center;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px 22px;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.07);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      color: #1d4ed8;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 15px;
+    }
+
+    .assistant {
+      margin-top: 50px;
+      background: white;
+      padding: 35px 25px;
+      border-radius: 20px;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .assistant h2 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .assistant-intro {
+      color: #666;
+      margin-bottom: 22px;
+    }
+
+    textarea {
+      width: 100%;
+      max-width: 800px;
+      min-height: 120px;
+      border: 1px solid #d7dce5;
+      border-radius: 13px;
+      padding: 15px;
+      font-family: inherit;
+      font-size: 16px;
+      resize: vertical;
+      outline: none;
+    }
+
+    textarea:focus {
+      border-color: #2563eb;
+    }
+
+    .action-button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 11px;
+      padding: 13px 28px;
+      margin-top: 12px;
+      font-family: inherit;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .answer {
+      display: none;
+      max-width: 800px;
+      margin: 20px auto 0;
+      background: #eef4ff;
+      border-radius: 13px;
+      padding: 20px;
+      text-align: right;
+    }
+
+    .ideas {
+      margin-top: 50px;
+    }
+
+    .idea-box {
+      background: white;
+      padding: 25px;
+      border-radius: 18px;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.07);
+      margin-top: 20px;
+    }
+
+    .idea-box ul {
+      padding-right: 25px;
+    }
+
+    .idea-box li {
+      margin: 8px 0;
+    }
+
+    .contact {
+      margin-top: 50px;
+      background: linear-gradient(135deg, #111827, #1d4ed8);
+      color: white;
+      padding: 45px 20px;
+      border-radius: 22px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 29px;
+      margin-bottom: 10px;
+    }
+
+    .contact p {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #111827;
+      color: #ddd;
+      text-align: center;
+      padding: 28px 15px;
+      margin-top: 50px;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      left: 20px;
+      bottom: 20px;
+      width: 58px;
+      height: 58px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 28px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.2);
+      z-index: 999;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 55px 18px;
+      }
+
+      header h1 {
+        font-size: 28px;
+      }
+
+      header p {
+        font-size: 16px;
+      }
+
+      .container {
+        padding: 35px 15px;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
 
-<header>
-<h1>به سایت هانی خوش آمدید</h1>
-<p>خدمات هوش مصنوعی و خدمات دیجیتال</p>
-</header>
+  <header>
+    <div class="logo">🤖</div>
 
-<div class="container">
+```
+<h1>خدمات هوش مصنوعی هانی</h1>
 
-<h2 style="text-align:center;">خدمات ما</h2>
+<p>
+  راهکارهای هوشمند برای طراحی سایت، تولید محتوا،
+  ایده‌پردازی و رشد کسب‌وکار
+</p>
 
-<div class="services">
+<div class="hero-buttons">
+  <a class="btn btn-main" href="#assistant">
+    🤖 صحبت با دستیار
+  </a>
 
-<div class="card">
-<h2>🤖 هوش مصنوعی</h2>
-<p>ارائه خدمات و راهکارهای کاربردی با هوش مصنوعی</p>
+  <a
+    class="btn btn-whatsapp"
+    href="https://wa.me/989160973940"
+    target="_blank"
+  >
+    📱 ثبت سفارش در واتساپ
+  </a>
 </div>
+```
 
-<div class="card">
-<h2>🌐 طراحی سایت</h2>
-<p>طراحی سایت برای کسب‌وکارها و پروژه‌های شخصی</p>
-</div>
+  </header>
 
-<div class="card">
-<h2>✍️ تولید محتوا</h2>
-<p>تولید و ویرایش محتوای متنی و دیجیتال</p>
-</div>
+  <main class="container">
 
-<div class="card">
-<h2>💡 خدمات دیجیتال</h2>
-<p>ارائه خدمات آنلاین و راهکارهای دیجیتال</p>
-</div>
+```
+<section>
+  <h2 class="section-title">خدمات ما</h2>
 
-</div>
+  <p class="section-description">
+    خدمات کاربردی با کمک ابزارهای هوش مصنوعی
+  </p>
 
-</div>
+  <div class="services">
 
-<footer>
-© 2026 Hani AI
-</footer>
+    <div class="card">
+      <div class="icon">🌐</div>
+      <h3>طراحی سایت</h3>
+      <p>
+        طراحی سایت‌های ساده، زیبا و مناسب برای کسب‌وکار و معرفی خدمات.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">✍️</div>
+      <h3>تولید محتوا</h3>
+      <p>
+        تولید مقاله، متن تبلیغاتی، معرفی محصول، کپشن و محتوای کاربردی.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">💡</div>
+      <h3>ایده‌پردازی</h3>
+      <p>
+        پیدا کردن ایده برای کسب‌وکار، تبلیغات، محصولات و محتوای جدید.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📱</div>
+      <h3>محتوای شبکه‌های اجتماعی</h3>
+      <p>
+        آماده‌سازی ایده و متن برای فعالیت بهتر در شبکه‌های اجتماعی.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📚</div>
+      <h3>کتاب و فایل</h3>
+      <p>
+        آماده‌سازی محتوای آموزشی، کتاب و فایل‌های دیجیتال.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🤖</div>
+      <h3>خدمات هوش مصنوعی</h3>
+      <p>
+        استفاده از ابزارهای هوش مصنوعی برای انجام سریع‌تر کارهای دیجیتال.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="assistant" id="assistant">
+
+  <h2>🤖 دستیار هوش مصنوعی هانی</h2>
+
+  <p class="assistant-intro">
+    سؤال یا نیاز خود را بنویسید تا دستیار راهنمایی اولیه ارائه کند.
+  </p>
+
+  <textarea
+    id="question"
+    placeholder="مثلاً: برای کسب‌وکار من چه نوع سایتی مناسب است؟"
+  ></textarea>
+
+  <br>
+
+  <button class="action-button" onclick="askAssistant()">
+    دریافت راهنمایی
+  </button>
+
+  <div class="answer" id="answer"></div>
+
+</section>
+
+
+<section class="ideas">
+
+  <h2 class="section-title">💡 چه کمکی می‌توانیم بکنیم؟</h2>
+
+  <div class="idea-box">
+
+    <ul>
+      <li>ساخت سایت معرفی کسب‌وکار</li>
+      <li>نوشتن متن تبلیغاتی و معرفی محصول</li>
+      <li>تولید مقاله و محتوای آموزشی</li>
+      <li>ایده برای پیج و شبکه‌های اجتماعی</li>
+      <li>ایده برای شروع یا توسعه کسب‌وکار</li>
+      <li>آماده‌سازی کتاب و فایل دیجیتال</li>
+      <li>استفاده کاربردی از ابزارهای هوش مصنوعی</li>
+    </ul>
+
+  </div>
+
+</section>
+
+
+<section class="contact">
+
+  <h2>📱 آماده ثبت سفارش هستید؟</h2>
+
+  <p>
+    درخواست خود را مستقیم در واتساپ ارسال کنید.
+  </p>
+
+  <a
+    class="btn btn-whatsapp"
+    href="https://wa.me/989160973940"
+    target="_blank"
+  >
+    💬 پیام در واتساپ
+  </a>
+
+</section>
+```
+
+  </main>
+
+<a
+class="whatsapp-float"
+href="https://wa.me/989160973940"
+target="_blank"
+title="ارتباط در واتساپ"
+
+>
+
+```
+💬
+```
+
+  </a>
+
+  <footer>
+    © 2026 خدمات هوش مصنوعی هانی
+    <br>
+    طراحی و ارائه خدمات دیجیتال با کمک هوش مصنوعی
+  </footer>
+
+  <script>
+
+    function askAssistant() {
+
+      const question =
+        document.getElementById("question").value.trim();
+
+      const answer =
+        document.getElementById("answer");
+
+      if (!question) {
+
+        answer.style.display = "block";
+
+        answer.innerHTML =
+          "لطفاً سؤال یا نیاز خود را بنویسید.";
+
+        return;
+      }
+
+      const text = question.toLowerCase();
+
+      let response =
+        "درخواست شما دریافت شد.<br><br>" +
+        "برای انتخاب بهترین خدمت، می‌توانید درخواست خود را " +
+        "از طریق واتساپ ارسال کنید تا سفارش شما بررسی شود.";
+
+      if (
+        text.includes("سایت") ||
+        text.includes("وب") ||
+        text.includes("طراحی")
+      ) {
+
+        response =
+          "🌐 برای طراحی سایت می‌توانیم یک سایت مناسب " +
+          "برای معرفی کسب‌وکار یا خدمات شما آماده کنیم.<br><br>" +
+          "برای ثبت سفارش روی دکمه واتساپ بزنید.";
+      }
+
+      else if (
+        text.includes("محتوا") ||
+        text.includes("مقاله") ||
+        text.includes("متن") ||
+        text.includes("تبلیغ")
+      ) {
+
+        response =
+          "✍️ برای تولید محتوا می‌توانیم مقاله، متن تبلیغاتی، " +
+          "معرفی محصول و محتوای شبکه‌های اجتماعی آماده کنیم.<br><br>" +
+          "برای ثبت سفارش از طریق واتساپ پیام دهید.";
+      }
+
+      else if (
+        text.includes("ایده") ||
+        text.includes("کسب") ||
+        text.includes("کار")
+      ) {
+
+        response =
+          "💡 می‌توانیم برای کسب‌وکار شما ایده‌های مختلف " +
+          "برای خدمات، محتوا و تبلیغات پیشنهاد کنیم.<br><br>" +
+          "برای بررسی درخواست خود، در واتساپ پیام دهید.";
+      }
+
+      else if (
+        text.includes("کتاب") ||
+        text.includes("فایل") ||
+        text.includes("آموزش")
+      ) {
+
+        response =
+          "📚 در زمینه آماده‌سازی کتاب، فایل و محتوای آموزشی " +
+          "هم می‌توانیم کمک کنیم.<br><br>" +
+          "برای ثبت سفارش در واتساپ پیام دهید.";
+      }
+
+      else if (
+        text.includes("هوش مصنوعی") ||
+        text.includes("ربات") ||
+        text.includes("ai")
+      ) {
+
+        response =
+          "🤖 می‌توانیم راهکارهای مختلف هوش مصنوعی را برای " +
+          "کارهای دیجیتال و کسب‌وکار بررسی کنیم.<br><br>" +
+          "برای درخواست خدمات، در واتساپ پیام دهید.";
+      }
+
+      answer.style.display = "block";
+      answer.innerHTML = response;
+    }
+
+  </script>
 
 </body>
 </html>
-```
